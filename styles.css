@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .logo {
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    background: #6c5ce7;
+    color: white;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.cta-btn {
+    background: #47c5ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background: #ff4500;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-item {
+    width: 250px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.book-author {
+    font-size: 14px;
+    color: #777;
+}
+.review-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.review-btn:hover {
+    background: #45a049;
+}
+
+.login-section, .register-section {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form .btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form .btn:hover {
+    background: #45a049;
+}
+/*2nd*/
+.recommendations-section {
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.recommendations-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.preferences-form {
+    margin-bottom: 30px;
+}
+
+.preferences-form select {
+    padding: 10px;
+    font-size: 1rem;
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.recommended-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-item {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.book-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.book-item p {
+    margin-bottom: 15px;
+}
+
+.review-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.review-btn:hover {
+    background: #45a049;
+}
+/* review part */
+.review-section {
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+.review-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.review-form label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.review-form select, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+.review-form .btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.review-form .btn:hover {
+    background: #45a049;
+}
+/* profile part */
+.profile-section {
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.profile-form label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+}
+
+.profile-form input[type="text"],
+.profile-form textarea,
+.profile-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.profile-form input[type="file"] {
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.book-preferences select {
+    padding: 10px;
+    font-size: 1rem;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.profile-form .btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.profile-form .btn:hover {
+    background: #45a049;
+}
+/* rating part */
+.rating {
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star:hover,
+.star.active {
+    color: gold;
+}

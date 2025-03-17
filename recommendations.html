@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations - BookShelf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">BookShelf</a>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="discover.html">Discover Books</a></li>
+                <li><a href="recommendations.html"class="active">Recommendations</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="profile.html" class="active">My Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="recommendations-section">
+        <h2>Get Book Recommendations Based on Your Preferences</h2>
+        
+        <form action="recommendations.html" method="POST" class="preferences-form">
+            <label for="genres">Select Your Favorite Genres:</label>
+            <select id="genres" name="genres" multiple>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="biography">Biography</option>
+                <option value="romance">Romance</option>
+            </select>
+            
+            <button type="submit" class="btn">Get Recommendations</button>
+        </form>
+
+        <div class="recommended-books">
+            <h3>Your Recommended Books:</h3>
+
+            
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150x200" alt="Book Cover">
+                <div class="book-title">The Great Gatsby</div>
+                <div class="book-author">by F. Scott Fitzgerald</div>
+                <p>Genre: Drama</p>
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <a href="write-review.html?book=1" class="review-btn">Write a Review</a>
+            </div>
+
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150x200" alt="Book Cover">
+                <div class="book-title">To Kill a Mockingbird</div>
+                <div class="book-author">by Harper Lee</div>
+                <p>Genre: Drama</p>
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <a href="write-review.html?book=2" class="review-btn">Write a Review</a>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BookShelf. All rights reserved.</p>
+    </footer>
+</body>
+</html>

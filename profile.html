@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - BookShelf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">BookShelf</a>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="discover.html">Discover Books</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="profile.html" class="active">My Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <h2>Your Profile</h2>
+
+        <form action="update-profile.html" method="POST" enctype="multipart/form-data" class="profile-form">
+            <!-- Profile Picture Section -->
+            <div class="profile-picture">
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                <img src="images/default-profile.jpg" alt="Profile Picture" id="profile-image-preview" class="profile-image">
+            </div>
+
+            <!-- User Information Section -->
+            <div class="user-info">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+            </div>
+
+            <!-- Book Preferences Section -->
+            <div class="book-preferences">
+                <label for="genres">Favorite Genres:</label>
+                <select id="genres" name="genres" multiple>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="biography">Biography</option>
+                    <option value="romance">Romance</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Save Changes</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BookShelf. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Preview the profile image before submitting the form
+        const fileInput = document.getElementById("profile-picture");
+        const previewImage = document.getElementById("profile-image-preview");
+
+        fileInput.addEventListener("change", function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    previewImage.src = reader.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
