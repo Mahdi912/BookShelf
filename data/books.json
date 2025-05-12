@@ -1,0 +1,171 @@
+[
+    {
+        "id": "fantasy1",
+        "title": "The Name of the Wind",
+        "author": "Patrick Rothfuss",
+        "genre": "Fantasy",
+        "description": "Told in Kvothe's own voice, this is the tale of the magically gifted young man who grows to be the most notorious wizard his world has ever seen.",
+        "cover": "images/book-covers/name-of-the-wind.jpg",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "id": "review1",
+                "userId": "user1",
+                "user": "John Smith",
+                "rating": 5,
+                "title": "Masterpiece of modern fantasy",
+                "text": "This book completely redefined what I expect from fantasy literature. The prose is beautiful, the characters are deep, and the world is incredibly immersive.",
+                "date": "2023-01-15T10:30:00Z"
+            },
+            {
+                "id": "review2",
+                "userId": "user2",
+                "user": "Emily Johnson",
+                "rating": 4,
+                "title": "Beautiful writing but slow pacing",
+                "text": "Rothfuss's writing is absolutely gorgeous, but the story does drag at times. Still, the characters are so compelling that I couldn't put it down.",
+                "date": "2023-02-20T14:45:00Z"
+            }
+        ]
+    },
+    {
+        "id": "fantasy2",
+        "title": "Mistborn: The Final Empire",
+        "author": "Brandon Sanderson",
+        "genre": "Fantasy",
+        "description": "In a world where the Dark Lord has won, a young street thief discovers she has magical powers and teams up with a group of rebels to overthrow the evil empire.",
+        "cover": "images/book-covers/mistborn.jpg",
+        "rating": 4.7,
+        "reviews": [
+            {
+                "id": "review3",
+                "userId": "user3",
+                "user": "Michael Brown",
+                "rating": 5,
+                "title": "Incredible magic system",
+                "text": "Sanderson's Allomancy system is one of the most original and well-thought-out magic systems I've ever encountered. The characters are great and the plot is full of twists.",
+                "date": "2023-03-10T09:15:00Z"
+            }
+        ]
+    },
+    {
+        "id": "thriller1",
+        "title": "The Silent Patient",
+        "author": "Alex Michaelides",
+        "genre": "Thriller",
+        "description": "A woman shoots her husband and then never speaks another word. A criminal psychotherapist tries to unravel the mystery.",
+        "cover": "images/book-covers/silent-patient.jpg",
+        "rating": 4.2,
+        "reviews": [
+            {
+                "id": "review4",
+                "userId": "user4",
+                "user": "Sarah Williams",
+                "rating": 4,
+                "title": "Gripping psychological thriller",
+                "text": "The twist at the end completely shocked me. The pacing was excellent and the characters were well-developed. Highly recommend for thriller fans.",
+                "date": "2023-04-05T16:20:00Z"
+            }
+        ]
+    },
+    {
+        "id": "thriller2",
+        "title": "Gone Girl",
+        "author": "Gillian Flynn",
+        "genre": "Thriller",
+        "description": "When a woman goes missing on her fifth wedding anniversary, her diary reveals hidden turmoil in her marriage, while her husband's behavior becomes increasingly suspicious.",
+        "cover": "images/book-covers/gone-girl.jpg",
+        "rating": 4.1,
+        "reviews": []
+    },
+    {
+        "id": "mystery1",
+        "title": "The Girl with the Dragon Tattoo",
+        "author": "Stieg Larsson",
+        "genre": "Mystery",
+        "description": "A journalist and a young computer hacker investigate a 40-year-old disappearance, uncovering dark family secrets along the way.",
+        "cover": "images/book-covers/dragon-tattoo.jpg",
+        "rating": 4.3,
+        "reviews": [
+            {
+                "id": "review5",
+                "userId": "user5",
+                "user": "David Miller",
+                "rating": 5,
+                "title": "Dark and compelling",
+                "text": "Lisbeth Salander is one of the most original characters in modern fiction. The mystery is complex and the Swedish setting adds great atmosphere.",
+                "date": "2023-05-12T11:10:00Z"
+            }
+        ]
+    },
+    {
+        "id": "mystery2",
+        "title": "The Hound of the Baskervilles",
+        "author": "Arthur Conan Doyle",
+        "genre": "Mystery",
+        "description": "Sherlock Holmes investigates the legend of a supernatural hound that haunts the Baskerville family.",
+        "cover": "images/book-covers/baskervilles.jpg",
+        "rating": 4.4,
+        "reviews": []
+    },
+    {
+        "id": "scifi1",
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "genre": "Sci-Fi",
+        "description": "In a distant future where noble houses control planetary fiefs, young Paul Atreides must lead a rebellion on the desert planet Arrakis.",
+        "cover": "images/book-covers/dune.jpg",
+        "rating": 4.6,
+        "reviews": [
+            {
+                "id": "review6",
+                "userId": "user6",
+                "user": "Robert Taylor",
+                "rating": 5,
+                "title": "The greatest sci-fi novel ever",
+                "text": "The world-building is unparalleled, the politics are complex, and the characters are unforgettable. A true masterpiece of the genre.",
+                "date": "2023-06-18T13:25:00Z"
+            }
+        ]
+    },
+    {
+        "id": "scifi2",
+        "title": "Project Hail Mary",
+        "author": "Andy Weir",
+        "genre": "Sci-Fi",
+        "description": "A lone astronaut must save the earth from disaster in this science-based adventure from the author of The Martian.",
+        "cover": "images/book-covers/hail-mary.jpg",
+        "rating": 4.8,
+        "reviews": []
+    },
+    {
+        "id": "horror1",
+        "title": "The Shining",
+        "author": "Stephen King",
+        "genre": "Horror",
+        "description": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings.",
+        "cover": "images/book-covers/shining.jpg",
+        "rating": 4.5,
+        "reviews": [
+            {
+                "id": "review7",
+                "userId": "user7",
+                "user": "Lisa Anderson",
+                "rating": 5,
+                "title": "The gold standard for horror",
+                "text": "King's masterpiece. The slow descent into madness is terrifying and the atmosphere is oppressive. Much better than the movie!",
+                "date": "2023-07-22T18:40:00Z"
+            }
+        ]
+    },
+    {
+        "id": "horror2",
+        "title": "The Haunting of Hill House",
+        "author": "Shirley Jackson",
+        "genre": "Horror",
+        "description": "Four seekers arrive at a notoriously unfriendly pile called Hill House to study supernatural phenomena and discover that the house is gathering its powers.",
+        "cover": "images/book-covers/hill-house.jpg",
+        "rating": 4.3,
+        "reviews": []
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "user1",
+        "name": "John Smith",
+        "email": "john@example.com",
+        "password": "password123",
+        "joined": "2023-01-01T10:00:00Z",
+        "shelf": {
+            "read": ["fantasy1", "thriller1"],
+            "currently-reading": ["scifi1"],
+            "want-to-read": ["horror1", "mystery2"]
+        },
+        "reviews": [
+            {
+                "id": "review1",
+                "bookId": "fantasy1",
+                "rating": 5,
+                "title": "Masterpiece of modern fantasy",
+                "text": "This book completely redefined what I expect from fantasy literature. The prose is beautiful, the characters are deep, and the world is incredibly immersive.",
+                "date": "2023-01-15T10:30:00Z"
+            }
+        ]
+    },
+    {
+        "id": "user2",
+        "name": "Emily Johnson",
+        "email": "emily@example.com",
+        "password": "password123",
+        "joined": "2023-01-05T14:20:00Z",
+        "shelf": {
+            "read": ["fantasy1", "mystery1"],
+            "currently-reading": ["thriller2"],
+            "want-to-read": ["scifi2"]
+        },
+        "reviews": [
+            {
+                "id": "review2",
+                "bookId": "fantasy1",
+                "rating": 4,
+                "title": "Beautiful writing but slow pacing",
+                "text": "Rothfuss's writing is absolutely gorgeous, but the story does drag at times. Still, the characters are so compelling that I couldn't put it down.",
+                "date": "2023-02-20T14:45:00Z"
+            }
+        ]
+    }
+]

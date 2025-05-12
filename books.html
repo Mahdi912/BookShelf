@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf - Browse Books</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/books.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BookShelf</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html" class="active">Browse Books</a></li>
+                <li><a href="submit-review.html">Submit Review</a></li>
+                <li id="auth-link"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+
+    <main>
+        <section class="book-filters">
+            <h1>Browse All Books</h1>
+            <div class="filter-options">
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="horror">Horror</option>
+                </select>
+                <select id="sort-by">
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                    <option value="rating-desc">Highest Rated</option>
+                    <option value="rating-asc">Lowest Rated</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="books-list">
+            <div class="books-grid" id="all-books">
+                <!-- Dynamically loaded from books.json -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookShelf. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/books.js"></script>
+    
+</body>
+</html>

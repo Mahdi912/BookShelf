@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf - Home</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BookShelf</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Browse Books</a></li>
+                <li><a href="submit-review.html">Submit Review</a></li>
+                <li id="auth-link"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search books or authors...">
+            <button id="search-btn">Search</button>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover Your Next Favorite Book</h1>
+            <p>Read and submit reviews for thousands of books across all genres.</p>
+        </section>
+
+        <section class="featured-books">
+            <h2>Featured This Week</h2>
+            <div class="books-grid" id="featured-books">
+                <!-- Dynamically loaded from books.json -->
+            </div>
+        </section>
+
+        <section class="genres">
+            <h2>Browse By Genre</h2>
+            <div class="genre-buttons">
+                <button class="genre-btn" data-genre="fantasy">Fantasy</button>
+                <button class="genre-btn" data-genre="thriller">Thriller</button>
+                <button class="genre-btn" data-genre="mystery">Mystery</button>
+                <button class="genre-btn" data-genre="sci-fi">Sci-Fi</button>
+                <button class="genre-btn" data-genre="horror">Horror</button>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Readers Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <p>"This site helped me discover so many great books!"</p>
+                    <p>- Jane D.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The reviews are thoughtful and honest."</p>
+                    <p>- Mark T.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookShelf. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>

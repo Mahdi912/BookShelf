@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf - Submit Review</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reviews.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BookShelf</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Browse Books</a></li>
+                <li><a href="submit-review.html" class="active">Submit Review</a></li>
+                <li id="auth-link"><a href="profile.html">My Profile</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="review-container">
+        <section class="review-form-section">
+            <div class="review-header">
+                <h1>Submit a Book Review</h1>
+                <p>Share your thoughts about a book you've read</p>
+            </div>
+            
+            <div class="review-form-container">
+                <form id="review-form">
+                    <div class="form-row">
+                        <div class="form-group book-selection-group">
+                            <label for="review-book">Select Book</label>
+                            <select id="review-book" required>
+                                <option value="">-- Choose a Book --</option>
+                                <!-- Dynamically loaded from books.json -->
+                            </select>
+                        </div>
+                        
+                        <div class="book-preview" id="book-preview">
+                            <div class="preview-placeholder">
+                                <i class="fas fa-book-open"></i>
+                                <p>Book information will appear here</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="review-rating">Your Rating</label>
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <span class="star" data-value="1">☆</span>
+                                    <span class="star" data-value="2">☆</span>
+                                    <span class="star" data-value="3">☆</span>
+                                    <span class="star" data-value="4">☆</span>
+                                    <span class="star" data-value="5">☆</span>
+                                </div>
+                                <span class="rating-text">Select rating</span>
+                            </div>
+                            <input type="hidden" id="review-rating" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-title">Review Title</label>
+                        <input type="text" id="review-title" placeholder="Summarize your review in a few words" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-text">Your Review</label>
+                        <textarea id="review-text" rows="8" placeholder="Share your thoughts about the book. What did you like or dislike? Would you recommend it?" required></textarea>
+                        <div class="hint">Minimum 10 characters</div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookShelf. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/reviews.js"></script>
+    
+</body>
+</html>

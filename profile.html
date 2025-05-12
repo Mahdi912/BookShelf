@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf - My Profile</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BookShelf</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Browse Books</a></li>
+                <li><a href="submit-review.html">Submit Review</a></li>
+                <li id="auth-link"><a href="profile.html">My Profile</a></li>
+            </ul>
+        </nav>
+        
+       
+    </header>
+
+    <main class="profile-container">
+        <section class="profile-header">
+            <h1 id="profile-name">User Name</h1>
+            <p id="profile-email">user@example.com</p>
+            <button id="logout-btn">Logout</button>
+        </section>
+
+        <section class="profile-sections">
+            <div class="profile-tabs">
+                <button class="tab-btn active" data-tab="reviews">My Reviews</button>
+                <button class="tab-btn" data-tab="shelf">My Shelf</button>
+                <button class="tab-btn" data-tab="recommendations">Recommendations</button>
+            </div>
+
+            <div class="tab-content active" id="reviews-tab">
+                <h2>My Reviews</h2>
+                <div class="reviews-list" id="user-reviews">
+                    <!-- Dynamically loaded from user data -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="shelf-tab">
+                <h2>My Shelf</h2>
+                
+                <div class="shelf-actions">
+                    <button id="add-to-shelf-btn">Add Books to Shelf</button>
+                    <select id="shelf-category">
+                        <option value="read">Read</option>
+                        <option value="currently-reading">Currently Reading</option>
+                        <option value="want-to-read">Want to Read</option>
+                    </select>
+                </div>
+                <div class="shelf-books" id="user-shelf">
+                    <!-- Dynamically loaded from user data -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="recommendations-tab">
+                <h2>Recommended For You</h2>
+                <div class="recommendations-list" id="user-recommendations">
+                    <!-- Dynamically loaded based on user preferences -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookShelf. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/profile.js"></script>
+    <!-- Add this modal dialog at the bottom of profile.html, just before </body> -->
+<div id="add-to-shelf-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Add Books to Your Shelf</h2>
+    <div class="book-selection">
+      <!-- Books will be populated here by JavaScript -->
+    </div>
+    <button id="confirm-add-to-shelf" class="btn">Add Selected Books</button>
+  </div>
+</div>
+
+</body>
+</html>
